@@ -40,6 +40,7 @@ function BusinessPartnerDetail() {
     <div className="card-container">
       <div style={{display: 'flex', justifyContent: 'space-between', alignItems: 'center'}}>
          <button onClick={() => navigate(-1)} className="btn-back">← Back to List</button>
+         <button onClick={() => navigate(`/bp/${id}/edit`)}>✏ Edit</button>
          <span style={{color: '#777'}}>BP ID: {id}</span>
       </div>
 
