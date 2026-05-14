@@ -7,6 +7,9 @@ import BusinessPartnerDetail from "./pages/BusinessPartnerDetail";
 import POSContainer from "./pages/POSContainer"; 
 import Header from "./components/Header"; // Import Header
 import Sidebar from "./components/Sidebar";
+// App.js / router
+import BusinessPartnerEdit from './pages/BusinessPartnerEdit';
+
 
 export default function App() {
   const [session, setSession] = useState(null);
@@ -42,6 +45,7 @@ export default function App() {
                 <Route path="/business-partner" element={<BusinessPartner />} />
                 <Route path="/sales-order" element={<POSContainer />} />
                 <Route path="/bp/:id" element={<BusinessPartnerDetail />} />
+             b  <Route path="/bp/:id/edit" element={<BusinessPartnerEdit />} />
                 <Route path="/" element={<Navigate to="/dashboard" />} />
               </Routes>
             </main>
